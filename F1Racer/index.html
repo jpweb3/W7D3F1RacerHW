@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <title>F1 Racer Api</title>
+</head>
+
+<body>
+    <h1 class="text-center">F1 Racer Api</h1>
+    <!-- Ranger HTML Elements -->
+    <div class="container">
+        <div class="row">
+            <div class="col-4 ">
+                <button class="btn btn-primary mx-3" onclick=" loadData()">Get
+                    Data</button>
+                <button class="btn btn-primary mx-3" onclick="clearData()">Clear
+                    Data</button>
+            </div>
+
+
+            <div class="col-8">
+
+                <section class="list-group ranger-list mt-3">
+                    <!-- Where the Ranger Api Information will Live -->
+
+                </section>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <form action="test-data" id="test-data-form">
+                <label for="season">Season</label>
+                <input type="text" name = "season" id="season">
+        
+                <label for="round">Round</label>
+                <input type="text" name = "round" id="round">
+        
+              <button type="submit" id="submitButton">Submit Me</button>
+            </form> 
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
